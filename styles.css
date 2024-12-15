@@ -27,8 +27,37 @@ body {
 }
 
 .logo {
-  font-weight: 600;
-  font-size: 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.02);
+}
+
+.logo-svg {
+  height: 40px;
+  width: auto;
+}
+
+.logo-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.logo-text-small {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.logo-subtext {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  fill: #666;
+  letter-spacing: 0.3px;
 }
 
 .nav a {
