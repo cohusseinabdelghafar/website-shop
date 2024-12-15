@@ -130,6 +130,7 @@ body {
   font-weight: 800;
   line-height: 1.2;
   background: linear-gradient(45deg, #333 30%, #666 70%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: fadeInUp 0.8s ease-out 0.2s backwards;
@@ -142,6 +143,10 @@ body {
   font-size: 2rem;
   animation: sparkle 1.5s ease-in-out infinite;
   top: 0;
+  background: linear-gradient(45deg, #333 30%, #ec625f 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-sparkles::before {
