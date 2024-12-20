@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Account Stack - Premium Share</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdvbGRHcmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I2JmOWIzMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I2Q4MmIyYiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxjaXJjbGUgY3g9IjI1IiBjeT0iMjUiIHI9IjIzIiBmaWxsPSJibGFjayIvPjxjaXJjbGUgY3g9IjI1IiBjeT0iMjUiIHI9IjIwIiBmaWxsPSJ1cmwoI2dvbGRHcmFkaWVudCkiLz48dGV4dCB4PSIyNSIgeT0iMjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBzdHlsZT0iZm9udC13ZWlnaHQ6ODAwO2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OkFyaWFsLHNhbnMtc2VyaWY7Ij5BUzwvdGV4dD48L3N2Zz4=">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/purchase.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <svg width="280" height="50" viewBox="0 0 280 50" class="logo-svg">
+                    <defs>
+                        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#bf9b30"/>
+                            <stop offset="100%" style="stop-color:#d82b2b"/>
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- Outer glow circle -->
+                    <circle cx="25" cy="25" r="23" fill="black" filter="url(#glow)" />
+                    
+                    <!-- Main circle with gradient -->
+                    <circle cx="25" cy="25" r="20" fill="url(#goldGradient)">
+                        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite" />
+                    </circle>
+                    
+                    <!-- AH text in circle with shadow -->
+                    <text x="25" y="25" text-anchor="middle" dominant-baseline="middle" class="logo-text-small" fill="white" style="font-weight: 800; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">AS</text>
+                    
+                    <!-- Main text with gradient -->
+                    <text x="70" y="25" class="logo-text" style="font-weight: 800;">Account Stack</text>
+                    
+                    <!-- Premium text -->
+                    <text x="70" y="45" class="logo-subtext" style="font-weight: 500;">Premium Share</text>
+                </svg>
+            </a>
+            <nav class="nav">
+                <a href="../index.html">Home</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+                <a href="https://t.me/AccountStackPro" target="_blank">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="purchase-container">
+            <h1>Purchase ExpressVPN</h1>
+            
+            <form id="purchaseForm">
+                <div class="product-selection">
+                    <div class="product-card">
+                        <svg width="40" height="40" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="512" cy="512" r="512" style="fill:#da3940" />
+                            <path d="M389.1 717.9c-57.5 0-94.2-32.3-94.2-77.2 0-14.8 4.4-32.8 21.4-69.5H256l55.3-118.3h385c8.8 0 14.8-6.6 14.8-14.2 0-7.7-6-14.2-14.8-14.2H384.7l27.4-58.6c17-36.1 53.7-59.7 93.6-59.7h130.9c75.6 0 131.4 52 131.4 119.9 0 80.5-73.9 145.1-159.3 145.1h-253c-7.7 15.9 1.1 28.5 19.7 28.5h201.5c33.4 0 59.1 23.5 59.1 53.7 0 34.5-33.4 64.6-71.2 64.6H389.1v-.1z" style="fill:#fff" />
+                        </svg>
+                        <div class="product-info">
+                            <h3>ExpressVPN</h3>
+                            <p>Secure & Private Access with Unlimited Data</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-methods">
+                    <h3>Select Payment Method</h3>
+                    <div class="payment-method" onclick="selectPayment('vodafone')">
+                        <input type="radio" name="payment" value="vodafone" id="vodafone">
+                        <div class="payment-method-info">
+                            <h4>Vodafone Cash</h4>
+                            <p>Pay 100 EGP via Vodafone Cash</p>
+                        </div>
+                    </div>
+                    <div class="payment-method" onclick="selectPayment('usdt')">
+                        <input type="radio" name="payment" value="usdt" id="usdt">
+                        <div class="payment-method-info">
+                            <h4>USDT (Tether)</h4>
+                            <p>Pay 2 USDT via Crypto Transfer</p>
+                        </div>
+                    </div>
+
+                    <!-- Vodafone Cash Payment Section -->
+                    <div class="payment-section" id="vodafone-section">
+                        <h4>Vodafone Cash Payment</h4>
+                        <div class="payment-option">
+                            <div class="payment-info">
+                                Send 100 EGP to Vodafone Cash Wallet: 
+                                <p class="wallet-address">01010204284</p>
+                            </div>
+                            <button onclick="event.preventDefault(); copyToClipboard('01010204284')" class="copy-button">Copy Number</button>
+                            <ol class="payment-steps" style="counter-reset: step-counter;">
+                                <li>Send the payment to the Vodafone Cash number</li>
+                                <li>Take a screenshot of your payment</li>
+                                <li>Contact us on Telegram to verify your payment</li>
+                                <li>Your ExpressVPN account & PC key details will be sent to your Telegram after payment verification</li>
+                            </ol>
+                            <a href="https://t.me/AccountStackPro" target="_blank" class="telegram-button">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.717-.962 4.084-1.362 5.815-.168.73-.337 1.466-.462 2.003-.125.537-.825 1.108-1.187 1.221-.362.113-1.013.097-1.013.097l-4.188-.333s-.9-.097-1.425-.615c-.525-.518-.162-.892-.162-.892l5.063-4.577c.275-.25.088-.375-.088-.375l-5.837.45s-.487-.113-.65-.375c-.162-.262.275-.65.275-.65l2.45-1.588c.225-.15 2.325-1.35 4.8-1.35 2.475 0 2.787.769 2.787.769z"/>
+                                </svg>
+                                Contact on Telegram
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- USDT Payment Section -->
+                    <div class="payment-section" id="usdt-section">
+                        <h4>USDT Payment</h4>
+                        <div class="payment-option">
+                            <div class="network-select-label">
+                                Select your preferred payment network:
+                            </div>
+                            <select class="network-select" onchange="showNetwork(this.value)">
+                                <option value="">Choose payment network...</option>
+                                <option value="binance">Binance Direct Transfer</option>
+                                <option value="tron">Tron (TRC20)</option>
+                                <option value="bnb">BNB Smart Chain (BEP20)</option>
+                            </select>
+
+                            <div id="binance-details" class="network-details">
+                                <div class="payment-info">
+                                    Send 2 USDT using this Binance ID:
+                                </div>
+                                <p class="wallet-address">757286549</p>
+                                <button onclick="event.preventDefault(); copyToClipboard('757286549')" class="copy-button">Copy ID</button>
+                            </div>
+
+                            <div id="tron-details" class="network-details">
+                                <div class="payment-info">
+                                    Send 2 USDT to this TRC20 wallet:
+                                </div>
+                                <p class="wallet-address">TRS1XM6s9g8c3p36nbyxvxtNMonj5FVjyc</p>
+                                <button onclick="event.preventDefault(); copyToClipboard('TRS1XM6s9g8c3p36nbyxvxtNMonj5FVjyc')" class="copy-button">Copy Address</button>
+                            </div>
+
+                            <div id="bnb-details" class="network-details">
+                                <div class="payment-info">
+                                    Send 2 USDT to this BEP20 wallet:
+                                </div>
+                                <p class="wallet-address">0x2f46805ac87c22f04843eaec73f2d139bb62ea7d</p>
+                                <button onclick="event.preventDefault(); copyToClipboard('0x2f46805ac87c22f04843eaec73f2d139bb62ea7d')" class="copy-button">Copy Address</button>
+                            </div>
+
+                            <ol class="payment-steps" style="counter-reset: step-counter;">
+                                <li>Choose your preferred network and send 2 USDT</li>
+                                <li>Take a screenshot of your transaction</li>
+                                <li>Contact us on Telegram to verify your payment</li>
+                                <li>Your ExpressVPN account & PC key details will be sent to your Telegram after payment verification</li>
+                            </ol>
+                            <a href="https://t.me/AccountStackPro" target="_blank" class="telegram-button">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.717-.962 4.084-1.362 5.815-.168.73-.337 1.466-.462 2.003-.125.537-.825 1.108-1.187 1.221-.362.113-1.013.097-1.013.097l-4.188-.333s-.9-.097-1.425-.615c-.525-.518-.162-.892-.162-.892l5.063-4.577c.275-.25.088-.375-.088-.375l-5.837.45s-.487-.113-.65-.375c-.162-.262.275-.65.275-.65l2.45-1.588c.225-.15 2.325-1.35 4.8-1.35 2.475 0 2.787.769 2.787.769z"/>
+                                </svg>
+                                Contact on Telegram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-item">
+                        <span>Product</span>
+                        <span>ExpressVPN</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Duration</span>
+                        <span>1 Month</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total</span>
+                        <span id="totalPrice">Choose payment method</span>
+                    </div>
+                </div>
+
+                <div class="terms">
+                    By completing this purchase, you agree to our Terms of Service and Privacy Policy.
+                    Your account details will be sent via Telegram after payment verification.
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function selectPayment(method) {
+            // Remove selected class from all payment methods
+            document.querySelectorAll('.payment-method').forEach(pm => {
+                pm.classList.remove('selected');
+            });
+            
+            // Hide all payment sections
+            document.querySelectorAll('.payment-section').forEach(ps => {
+                ps.classList.remove('active');
+            });
+            
+            // Select the clicked payment method
+            const selectedMethod = document.querySelector(`#${method}`).parentElement;
+            selectedMethod.classList.add('selected');
+            
+            // Show the corresponding payment section
+            document.querySelector(`#${method}-section`).classList.add('active');
+            
+            // Check the radio button
+            document.querySelector(`#${method}`).checked = true;
+
+            // Update total price
+            document.getElementById('totalPrice').textContent = 
+                method === 'vodafone' ? '100 EGP' : '2 USDT';
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                const button = event.target;
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                setTimeout(() => {
+                    button.textContent = originalText;
+                }, 2000);
+            });
+        }
+
+        function showNetwork(network) {
+            // Hide all network details
+            document.querySelectorAll('.network-details').forEach(detail => {
+                detail.classList.remove('active');
+            });
+            
+            // Show selected network details
+            if (network) {
+                document.getElementById(network + '-details').classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
