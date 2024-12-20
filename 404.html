@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        // Get the current path
+        const path = window.location.pathname;
+        // Remove any trailing slashes
+        const cleanPath = path.replace(/\/$/, '');
+        // Get the repository name from the path
+        const segments = cleanPath.split('/');
+        const repo = segments[1]; // This will be your repo name
+        
+        // If we're already at the correct URL structure, don't redirect
+        if (!path.includes('/pages/')) {
+            // Redirect to the actual page
+            window.location.replace('/pages' + cleanPath);
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html> 
