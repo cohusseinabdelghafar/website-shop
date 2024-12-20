@@ -41,7 +41,6 @@ A modern web platform for secure account sharing services, offering premium subs
 
 ### Vodafone Cash
 - Amount: 100 EGP
-- Wallet Number: 01010204284
 
 ### USDT (Tether)
 - Amount: 2 USDT
