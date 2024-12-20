@@ -4,22 +4,22 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>
-        // Get the current path
-        const path = window.location.pathname;
-        // Remove any trailing slashes
-        const cleanPath = path.replace(/\/$/, '');
-        // Get the repository name from the path
-        const segments = cleanPath.split('/');
-        const repo = segments[1]; // This will be your repo name
-        
-        // If we're already at the correct URL structure, don't redirect
-        if (!path.includes('/pages/')) {
-            // Redirect to the actual page
-            window.location.replace('/pages' + cleanPath);
-        }
+        (function() {
+            var path = window.location.pathname;
+            var htmlExtensionPattern = /\.html$/;
+            
+            // Remove .html from the end of the path if it exists
+            if (!htmlExtensionPattern.test(path)) {
+                path = path.replace(/\/$/, '');
+                path += '.html';
+                var newUrl = window.location.origin + path;
+                window.location.replace(newUrl);
+            }
+        })();
     </script>
 </head>
 <body>
+    <h1>Page not found</h1>
     <p>Redirecting...</p>
 </body>
 </html> 
