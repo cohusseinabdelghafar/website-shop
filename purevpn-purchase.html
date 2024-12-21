@@ -27,21 +27,12 @@
                             </feMerge>
                         </filter>
                     </defs>
-                    <!-- Outer glow circle -->
                     <circle cx="25" cy="25" r="23" fill="black" filter="url(#glow)" />
-                    
-                    <!-- Main circle with gradient -->
                     <circle cx="25" cy="25" r="20" fill="url(#goldGradient)">
                         <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite" />
                     </circle>
-                    
-                    <!-- AH text in circle with shadow -->
                     <text x="25" y="25" text-anchor="middle" dominant-baseline="middle" class="logo-text-small" fill="white" style="font-weight: 800; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">AS</text>
-                    
-                    <!-- Main text with gradient -->
                     <text x="70" y="25" class="logo-text" style="font-weight: 800;">Account Stack</text>
-                    
-                    <!-- Premium text -->
                     <text x="70" y="45" class="logo-subtext" style="font-weight: 500;">Premium Share</text>
                 </svg>
             </a>
@@ -87,14 +78,14 @@
                         <input type="radio" name="payment" value="vodafone" id="vodafone">
                         <div class="payment-method-info">
                             <h4>Vodafone Cash</h4>
-                            <p>Pay 100 EGP via Vodafone Cash</p>
+                            <p>Pay <span class="egp-price">Loading...</span> via Vodafone Cash</p>
                         </div>
                     </div>
                     <div class="payment-method" onclick="selectPayment('usdt')">
                         <input type="radio" name="payment" value="usdt" id="usdt">
                         <div class="payment-method-info">
                             <h4>USDT (Tether)</h4>
-                            <p>Pay 2 USDT via Crypto Transfer</p>
+                            <p>Pay <span class="usdt-price">Loading...</span> via Crypto Transfer</p>
                         </div>
                     </div>
 
@@ -103,7 +94,7 @@
                         <h4>Vodafone Cash Payment</h4>
                         <div class="payment-option">
                             <div class="payment-info">
-                                Send 100 EGP to Vodafone Cash Wallet: 
+                                Send <span class="egp-price">Loading...</span> to Vodafone Cash Wallet: 
                                 <p class="wallet-address">01010204284</p>
                             </div>
                             <button onclick="event.preventDefault(); copyToClipboard('01010204284')" class="copy-button">Copy Number</button>
@@ -138,7 +129,7 @@
 
                             <div id="binance-details" class="network-details">
                                 <div class="payment-info">
-                                    Send 2 USDT using this Binance ID:
+                                    Send <span class="usdt-price">Loading...</span> using this Binance ID:
                                 </div>
                                 <p class="wallet-address">757286549</p>
                                 <button onclick="event.preventDefault(); copyToClipboard('757286549')" class="copy-button">Copy ID</button>
@@ -146,7 +137,7 @@
 
                             <div id="tron-details" class="network-details">
                                 <div class="payment-info">
-                                    Send 2 USDT to this TRC20 wallet:
+                                    Send <span class="usdt-price">Loading...</span> to this TRC20 wallet:
                                 </div>
                                 <p class="wallet-address">TRS1XM6s9g8c3p36nbyxvxtNMonj5FVjyc</p>
                                 <button onclick="event.preventDefault(); copyToClipboard('TRS1XM6s9g8c3p36nbyxvxtNMonj5FVjyc')" class="copy-button">Copy Address</button>
@@ -154,14 +145,14 @@
 
                             <div id="bnb-details" class="network-details">
                                 <div class="payment-info">
-                                    Send 2 USDT to this BEP20 wallet:
+                                    Send <span class="usdt-price">Loading...</span> to this BEP20 wallet:
                                 </div>
                                 <p class="wallet-address">0x2f46805ac87c22f04843eaec73f2d139bb62ea7d</p>
                                 <button onclick="event.preventDefault(); copyToClipboard('0x2f46805ac87c22f04843eaec73f2d139bb62ea7d')" class="copy-button">Copy Address</button>
                             </div>
 
                             <ol class="payment-steps" style="counter-reset: step-counter;">
-                                <li>Choose your preferred network and send 2 USDT</li>
+                                <li>Choose your preferred network and send the payment</li>
                                 <li>Take a screenshot of your transaction</li>
                                 <li>Contact us on Telegram to verify your payment</li>
                                 <li>Your PureVPN account details will be sent to your Telegram after payment verification</li>
@@ -202,24 +193,53 @@
 
     <script src="script.js"></script>
     <script>
+        // Get product prices from the products data
+        function initializePrices() {
+            const pureVPN = products.find(p => p.id === 'purevpn');
+            if (pureVPN) {
+                const egpPrice = pureVPN.price.egp;
+                const usdtPrice = pureVPN.price.usdt;
+                
+                // Update all EGP price elements
+                document.querySelectorAll('.egp-price').forEach(el => {
+                    el.textContent = `${egpPrice} EGP`;
+                });
+                
+                // Update all USDT price elements
+                document.querySelectorAll('.usdt-price').forEach(el => {
+                    el.textContent = `${usdtPrice} USDT`;
+                });
+            }
+        }
+
         function selectPayment(method) {
+            // Remove selected class from all payment methods
             document.querySelectorAll('.payment-method').forEach(pm => {
                 pm.classList.remove('selected');
             });
             
+            // Hide all payment sections
             document.querySelectorAll('.payment-section').forEach(ps => {
                 ps.classList.remove('active');
             });
             
+            // Select the clicked payment method
             const selectedMethod = document.querySelector(`#${method}`).parentElement;
             selectedMethod.classList.add('selected');
             
+            // Show the corresponding payment section
             document.querySelector(`#${method}-section`).classList.add('active');
             
+            // Check the radio button
             document.querySelector(`#${method}`).checked = true;
 
-            document.getElementById('totalPrice').textContent = 
-                method === 'vodafone' ? '100 EGP' : '2 USDT';
+            // Get prices from products data
+            const pureVPN = products.find(p => p.id === 'purevpn');
+            if (pureVPN) {
+                // Update total price based on selected payment method
+                document.getElementById('totalPrice').textContent = 
+                    method === 'vodafone' ? `${pureVPN.price.egp} EGP` : `${pureVPN.price.usdt} USDT`;
+            }
         }
 
         function copyToClipboard(text) {
@@ -234,14 +254,19 @@
         }
 
         function showNetwork(network) {
+            // Hide all network details
             document.querySelectorAll('.network-details').forEach(detail => {
                 detail.classList.remove('active');
             });
             
+            // Show selected network details
             if (network) {
                 document.getElementById(network + '-details').classList.add('active');
             }
         }
+
+        // Initialize prices when the page loads
+        document.addEventListener('DOMContentLoaded', initializePrices);
     </script>
 </body>
 </html>

@@ -228,6 +228,43 @@ body {
   animation: slideUp 0.8s ease-out backwards;
 }
 
+.product-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  justify-content: flex-start;
+  transition: all 0.3s ease;
+}
+
+.plan-card.hidden .product-header {
+  justify-content: center;
+}
+
+.product-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(236, 98, 95, 0.1);
+  border-radius: 8px;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.product-icon svg {
+  width: 24px;
+  height: 24px;
+  color: #ec625f;
+}
+
+.product-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 .plan-card:nth-child(1) { animation-delay: 0.2s; }
 .plan-card:nth-child(2) { animation-delay: 0.4s; }
 .plan-card:nth-child(3) { animation-delay: 0.6s; }
@@ -236,6 +273,11 @@ body {
 .plan-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.plan-card:hover .product-icon {
+  transform: scale(1.1);
+  background: rgba(236, 98, 95, 0.15);
 }
 
 .plan-card.highlight {
