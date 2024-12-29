@@ -1,4 +1,4 @@
-# Account Stack - Premium Share
+# Premium Share - Account Stack
 
 A modern web platform for secure account sharing services, offering premium subscriptions for ExpressVPN, BrowserStack, ChatGPT Plus, and PureVPN at affordable prices.
 
@@ -84,4 +84,4 @@ By using our service, you agree to:
 
 ## License
 
-© 2024 Account Stack. All rights reserved.
+© 2024 Premium Share. All rights reserved.
