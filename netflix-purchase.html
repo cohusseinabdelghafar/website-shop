@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Premium Share - Account Stack</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdvbGRHcmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I2JmOWIzMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I2Q4MmIyYiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxjaXJjbGUgY3g9IjI1IiBjeT0iMjUiIHI9IjIzIiBmaWxsPSJibGFjayIvPjxjaXJjbGUgY3g9IjI1IiBjeT0iMjUiIHI9IjIwIiBmaWxsPSJ1cmwoI2dvbGRHcmFkaWVudCkiLz48dGV4dCB4PSIyNSIgeT0iMjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBzdHlsZT0iZm9udC13ZWlnaHQ6ODAwO2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OkFyaWFsLHNhbnMtc2VyaWY7Ij5BUzwvdGV4dD48L3N2Zz4=">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="purchase.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <svg width="280" height="50" viewBox="0 0 280 50" class="logo-svg">
+                    <defs>
+                        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#bf9b30"/>
+                            <stop offset="100%" style="stop-color:#d82b2b"/>
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <circle cx="25" cy="25" r="23" fill="black" filter="url(#glow)" />
+                    <circle cx="25" cy="25" r="20" fill="url(#goldGradient)">
+                        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite" />
+                    </circle>
+                    <text x="25" y="25" text-anchor="middle" dominant-baseline="middle" class="logo-text-small" fill="white" style="font-weight: 800; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">PS</text>
+                    <text x="70" y="25" class="logo-text" style="font-weight: 800;">Premium Share</text>
+                    <text x="70" y="45" class="logo-subtext" style="font-weight: 500;">Account Stack</text>
+                </svg>
+            </a>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+                <a href="https://t.me/PremiumSharePro" target="_blank">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="purchase-container">
+            <h1>Purchase Netflix Premium</h1>
+            
+            <form id="purchaseForm">
+                <div class="product-selection">
+                    <div class="product-card">
+                        <svg width="40" height="40" viewBox="-49.6 0 222 222" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(12.495 6.756)">
+                              <g transform="translate(81.631 113.771) scale(.29074)">
+                                <path d="M-52.5-412.3l-.3 168-.3 168-13.8-39v-.1l-17.9 374c17.6 49.6 27 76.1 27.1 76.2.1.1 10.1.7 22.2 1.3 36.6 1.8 82 5.7 116.5 10 8 1 14.8 1.5 15.3 1.1s.6-171.4.5-380.1l-.3-379.4h-149z" fill="#e50914"/>
+                                <path d="M-322-412.8V-33c0 208.9.2 380 .5 380.3.3.3 13.2-1 28.8-2.7 15.6-1.7 37.1-3.9 47.8-4.8 16.4-1.4 65.6-4.5 71.2-4.6 1.7 0 1.8-8.5 2-160.9l.3-160.9 11.9 33.6c1.8 5.2 2.4 6.8 4.2 11.9l17.9-373.9c-3.8-10.7-1.8-5.1-6.1-17.3-14.6-41.3-27-76.2-27.5-77.8l-1-2.8h-150z" fill="#e50914"/>
+                                <path d="M-322-412.8l150.5 426.5v-.2l11.9 33.6C-93.5 234.2-58 334.6-57.8 334.8c.1.1 10.1.7 22.2 1.3 36.6 1.8 82 5.7 116.5 10 7.9 1 14.8 1.5 15.2 1.1L-53.1-76.4v.1l-13.8-39c-13.5-38.1-22.5-63.6-76.8-217-14.6-41.3-27-76.2-27.5-77.8l-1-2.8h-74.9l-74.9.1z" fill="#e50914"/>
+                              </g>
+                            </g>
+                        </svg>
+                        <div class="product-info">
+                            <h3>Netflix Premium</h3>
+                            <p>📺 Premium 4K UHD • Watch on TV, Mobile, PC</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-methods">
+                    <h3>Select Payment Method</h3>
+                    <div class="payment-method" onclick="selectPayment('vodafone')">
+                        <input type="radio" name="payment" value="vodafone" id="vodafone">
+                        <div class="payment-method-info">
+                            <h4>Vodafone Cash</h4>
+                            <p>Pay <span class="egp-price">Loading...</span> via Vodafone Cash</p>
+                        </div>
+                    </div>
+                    <div class="payment-method" onclick="selectPayment('usdt')">
+                        <input type="radio" name="payment" value="usdt" id="usdt">
+                        <div class="payment-method-info">
+                            <h4>USDT (Tether)</h4>
+                            <p>Pay <span class="usdt-price">Loading...</span> via Crypto Transfer</p>
+                        </div>
+                    </div>
+
+                    <!-- Vodafone Cash Payment Section -->
+                    <div class="payment-section" id="vodafone-section">
+                        <h4>Vodafone Cash Payment</h4>
+                        <div class="payment-option">
+                            <div class="payment-info">
+                                Send <span class="egp-price">Loading...</span> to Vodafone Cash Wallet: 
+                                <p class="wallet-address">01010204284</p>
+                            </div>
+                            <button onclick="event.preventDefault(); copyToClipboard('01010204284')" class="copy-button">Copy Number</button>
+                            <ol class="payment-steps" style="counter-reset: step-counter;">
+                                <li>Send the payment to the Vodafone Cash number</li>
+                                <li>Take a screenshot of your payment</li>
+                                <li>Contact us on Telegram to verify your payment</li>
+                                <li>Your Netflix Premium account details will be sent to your Telegram after payment verification</li>
+                            </ol>
+                            <a href="https://t.me/PremiumSharePro" target="_blank" class="telegram-button">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.717-.962 4.084-1.362 5.815-.168.73-.337 1.466-.462 2.003-.125.537-.825 1.108-1.187 1.221-.362.113-1.013.097-1.013.097l-4.188-.333s-.9-.097-1.425-.615c-.525-.518-.162-.892-.162-.892l5.063-4.577c.275-.25.088-.375-.088-.375l-5.837.45s-.487-.113-.65-.375c-.162-.262.275-.65.275-.65l2.45-1.588c.225-.15 2.325-1.35 4.8-1.35 2.475 0 2.787.769 2.787.769z"/>
+                                </svg>
+                                Contact on Telegram
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- USDT Payment Section -->
+                    <div class="payment-section" id="usdt-section">
+                        <h4>USDT Payment</h4>
+                        <div class="payment-option">
+                            <div class="network-select-label">
+                                Select your preferred payment network:
+                            </div>
+                            <select class="network-select" onchange="showNetwork(this.value)">
+                                <option value="">Choose payment network...</option>
+                                <option value="binance">Binance Direct Transfer</option>
+                                <option value="tron">Tron (TRC20)</option>
+                                <option value="bnb">BNB Smart Chain (BEP20)</option>
+                            </select>
+
+                            <div id="binance-details" class="network-details">
+                                <div class="payment-info">
+                                    Send <span class="usdt-price">Loading...</span> using this Binance ID:
+                                </div>
+                                <p class="wallet-address">757286549</p>
+                                <button onclick="event.preventDefault(); copyToClipboard('757286549')" class="copy-button">Copy ID</button>
+                            </div>
+
+                            <div id="tron-details" class="network-details">
+                                <div class="payment-info">
+                                    Send <span class="usdt-price">Loading...</span> to this TRC20 wallet:
+                                </div>
+                                <p class="wallet-address">TRS1XM6s9g8c3p36nbyxvxtNMonj5FVjyc</p>
+                                <button onclick="event.preventDefault(); copyToClipboard('TRS1XM6s9g8c3p36nbyxvxtNMonj5FVjyc')" class="copy-button">Copy Address</button>
+                            </div>
+
+                            <div id="bnb-details" class="network-details">
+                                <div class="payment-info">
+                                    Send <span class="usdt-price">Loading...</span> to this BEP20 wallet:
+                                </div>
+                                <p class="wallet-address">0x2f46805ac87c22f04843eaec73f2d139bb62ea7d</p>
+                                <button onclick="event.preventDefault(); copyToClipboard('0x2f46805ac87c22f04843eaec73f2d139bb62ea7d')" class="copy-button">Copy Address</button>
+                            </div>
+
+                            <ol class="payment-steps" style="counter-reset: step-counter;">
+                                <li>Choose your preferred network and send the payment</li>
+                                <li>Take a screenshot of your transaction</li>
+                                <li>Contact us on Telegram to verify your payment</li>
+                                <li>Your Netflix Premium account details will be sent to your Telegram after payment verification</li>
+                            </ol>
+                            <a href="https://t.me/PremiumSharePro" target="_blank" class="telegram-button">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.717-.962 4.084-1.362 5.815-.168.73-.337 1.466-.462 2.003-.125.537-.825 1.108-1.187 1.221-.362.113-1.013.097-1.013.097l-4.188-.333s-.9-.097-1.425-.615c-.525-.518-.162-.892-.162-.892l5.063-4.577c.275-.25.088-.375-.088-.375l-5.837.45s-.487-.113-.65-.375c-.162-.262.275-.65.275-.65l2.45-1.588c.225-.15 2.325-1.35 4.8-1.35 2.475 0 2.787.769 2.787.769z"/>
+                                </svg>
+                                Contact on Telegram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-item">
+                        <span>Product</span>
+                        <span>Netflix Premium</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Duration</span>
+                        <span>1 Month</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total</span>
+                        <span id="totalPrice">Choose payment method</span>
+                    </div>
+                </div>
+
+                <div class="terms">
+                    By completing this purchase, you agree to our Terms of Service and Privacy Policy.
+                    Your account details will be sent via Telegram after payment verification.
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Get product prices from the products data
+        function initializePrices() {
+            const netflix = products.find(p => p.id === 'netflix');
+            if (netflix) {
+                const egpPrice = netflix.price.egp;
+                const usdtPrice = netflix.price.usdt;
+                
+                // Update all EGP price elements
+                document.querySelectorAll('.egp-price').forEach(el => {
+                    el.textContent = `${egpPrice} EGP`;
+                });
+                
+                // Update all USDT price elements
+                document.querySelectorAll('.usdt-price').forEach(el => {
+                    el.textContent = `${usdtPrice} USDT`;
+                });
+            }
+        }
+
+        function selectPayment(method) {
+            // Remove selected class from all payment methods
+            document.querySelectorAll('.payment-method').forEach(pm => {
+                pm.classList.remove('selected');
+            });
+            
+            // Hide all payment sections
+            document.querySelectorAll('.payment-section').forEach(ps => {
+                ps.classList.remove('active');
+            });
+            
+            // Select the clicked payment method
+            const selectedMethod = document.querySelector(`#${method}`).parentElement;
+            selectedMethod.classList.add('selected');
+            
+            // Show the corresponding payment section
+            document.querySelector(`#${method}-section`).classList.add('active');
+            
+            // Check the radio button
+            document.querySelector(`#${method}`).checked = true;
+
+            // Get prices from products data
+            const netflix = products.find(p => p.id === 'netflix');
+            if (netflix) {
+                // Update total price based on selected payment method
+                document.getElementById('totalPrice').textContent = 
+                    method === 'vodafone' ? `${netflix.price.egp} EGP` : `${netflix.price.usdt} USDT`;
+            }
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                const button = event.target;
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                setTimeout(() => {
+                    button.textContent = originalText;
+                }, 2000);
+            });
+        }
+
+        function showNetwork(network) {
+            // Hide all network details
+            document.querySelectorAll('.network-details').forEach(detail => {
+                detail.classList.remove('active');
+            });
+            
+            // Show selected network details
+            if (network) {
+                document.querySelector(`#${network}-details`).classList.add('active');
+            }
+        }
+
+        // Initialize prices when the page loads
+        document.addEventListener('DOMContentLoaded', initializePrices);
+    </script>
+</body>
+</html> 
