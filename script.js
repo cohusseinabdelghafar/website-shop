@@ -62,34 +62,6 @@ const products = [
     isPopular: true,
     visible: true,
     searchTags: "ai assistant openai gpt-4 fast response priority access"
-  },
-  {
-    id: "purevpn",
-    name: "PureVPN",
-    icon: `<svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <radialGradient id="purevpn-gradient" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" style="stop-color:#9370DB"/>
-                    <stop offset="50%" style="stop-color:#6A5ACD"/>
-                    <stop offset="100%" style="stop-color:#4B0082"/>
-                </radialGradient>
-            </defs>
-            <circle cx="12" cy="12" r="12" fill="url(#purevpn-gradient)"/>
-            <circle cx="12" cy="12" r="9" fill="#6A5ACD" opacity="0.7"/>
-            <circle cx="12" cy="12" r="6" fill="#9370DB" opacity="0.5"/>
-            <path d="M12 7l4 8H8l4-8z" fill="white"/>
-          </svg>`,
-    price: { egp: 100, usdt: 2 },
-    features: [
-      "Global Server Network",
-      "High-Speed Connections",
-      "Multi-Device Support",
-      "Secure & Private Access"
-    ],
-    purchaseLink: "purevpn-purchase",
-    isPopular: false,
-    visible: true,
-    searchTags: "vpn global network high-speed multi-device secure private"
   }
 ];
 
